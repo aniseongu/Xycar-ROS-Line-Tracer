@@ -6,11 +6,10 @@
         <param name="pixel_format" value="yuyv" />
     </node>
 
-    <node name="xycar_vision_node" pkg="mobility_line_tracer" type="vision_node.py" output="screen" />
+    <node name="xycar_vision_node" pkg="mobility_line_tracer" type="vision_node" output="screen" />
 
-    <node name="xycar_control_node" pkg="mobility_line_tracer" type="control_node.py" output="screen">
+    <node name="xycar_control_node" pkg="mobility_line_tracer" type="control_node" output="screen">
         <param name="kp" value="0.45" />
         <param name="ki" value="0.0005" />
-        <param name="kd" value="0.1" />
-    </node>
+        <param name="kd" value="0.12" /> </node>
 </launch>
