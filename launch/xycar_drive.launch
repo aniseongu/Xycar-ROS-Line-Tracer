@@ -1,0 +1,10 @@
+<launch>
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" />
+
+    <node name="vision_node" pkg="mobility_line_tracer" type="vision_node" output="screen" />
+
+    <node name="control_node" pkg="mobility_line_tracer" type="control_node" output="screen">
+        <param name="kp" value="0.45" />
+        <param name="kd" value="0.12" />
+    </node>
+</launch>
