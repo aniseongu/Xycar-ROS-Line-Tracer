@@ -1,11 +1,16 @@
 <launch>
-    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" />
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <param name="video_device" value="/dev/video0" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+    </node>
 
-    <node name="vision_node" pkg="mobility_line_tracer" type="vision_node.py" output="screen" />
+    <node name="xycar_vision_node" pkg="mobility_line_tracer" type="vision_node.py" output="screen" />
 
-    <node name="control_node" pkg="mobility_line_tracer" type="control_node.py" output="screen">
-        <param name="kp" value="0.01" />
-        <param name="ki" value="0.0001" />
-        <param name="kd" value="0.005" />
+    <node name="xycar_control_node" pkg="mobility_line_tracer" type="control_node.py" output="screen">
+        <param name="kp" value="0.45" />
+        <param name="ki" value="0.0005" />
+        <param name="kd" value="0.1" />
     </node>
 </launch>
