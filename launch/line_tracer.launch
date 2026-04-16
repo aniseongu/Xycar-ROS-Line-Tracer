@@ -1,0 +1,11 @@
+<launch>
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" />
+
+    <node name="vision_node" pkg="mobility_line_tracer" type="vision_node.py" output="screen" />
+
+    <node name="control_node" pkg="mobility_line_tracer" type="control_node.py" output="screen">
+        <param name="kp" value="0.01" />
+        <param name="ki" value="0.0001" />
+        <param name="kd" value="0.005" />
+    </node>
+</launch>
