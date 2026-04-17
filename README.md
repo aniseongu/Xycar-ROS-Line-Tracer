@@ -52,7 +52,7 @@
     ├── vision_node.cpp    # 차선 인식 및 영상 처리 전용 노드
     └── control_node.cpp   # 차량 제어 및 센서 퓨전 전용 노드
 ```
-⚖️ Credits & Disclaimer
+##⚖️ Credits & Disclaimer
 Original Course: 본 프로젝트의 알고리즘 기초 및 하드웨어 연동 이론은 '자이트론(Xytron) 자율주행 교육' 커리큘럼을 기반으로 학습되었습니다.
 
 Implementation: 저작권 및 보안 준수를 위해 제공된 예제 코드를 사용하지 않고, 모든 로직을 C++로 직접 재작성(Scratch Implementation) 하였습니다.
