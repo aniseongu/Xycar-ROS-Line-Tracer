@@ -3,7 +3,7 @@
   <name>mobility_line_tracer</name>
   <version>0.0.1</version>
   <description>Xycar ROS Autonomous Driving System (C++)</description>
-  <maintainer email="seongu@skku.edu">Seongu An</maintainer>
+  <maintainer email="asw3521@skku.edu">Seongu An</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>catkin</buildtool_depend>
